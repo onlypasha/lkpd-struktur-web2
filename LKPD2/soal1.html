@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftara</title>
+    <!-- <link rel="stylesheet" href="./formstyle.css"> -->
+</head>
+<body>
+    <div class="nav">
+
+    </div>
+    <div class="content">
+        <form action="./">
+            <fieldset>
+                <legend>
+                    <h2>
+                        Form Pendaftaran
+                    </h2>
+                </legend>
+            <label for="nama">Nama Lengkap: </label>
+            <input type="text" id="nama">
+            <br>
+            <label for="Asal_Sekolah">Asal Sekolah: </label>
+            <input type="text" name="" id="Asal_Sekolah">
+            <br>
+            <label for="tempat_lahir">Tempat Lahir: </label>
+            <input type="text" name="" id="tempat_lahir">
+            <br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="gender">Jenis kelamin: </label>
+            <input type="radio" name="gender" id="gender"> Laki-laki</input>
+            <input type="radio" name="gender" id="gender"> Perempuan</input>
+            <br>
+            <label for="mapel">Mata Pelajaran Favorit: </label>
+            <input type="checkbox" name="mapel" id="mapel">Dasar Keahlian</input>
+            <input type="checkbox" name="mapel" id="mapel">Matematika</input>
+            <input type="checkbox" name="mapel" id="mapel">Sejarah</input>
+            <br>
+            <label for="alamat">Alamat: </label><br>
+            <textarea name="alamat" id="alamat"></textarea>
+            <br>
+            <label for="agama">Agama: </label>
+            <select name="agama" id="agama">
+                <option value="Islam">Islam</option>
+                <option value="Katolik">Katolik</option>
+                <option value="Protestan">Protestan</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Buddha">Buddha</option>
+            </select>
+            <br>
+            <label for="Jurusan">Jurusan: </label>
+            <select name="Jurusan" id="Jurusan">
+                <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
+                <option value="Bisnis Retail">Bisnis Retail</option>
+                <option value="Manajemen Perkantoran">Manajemen Perkantoran</option>
+                <option value="Akuntansi">Akuntansi</option>
+            </select><br>
+            <button type="submit">Kirim</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
