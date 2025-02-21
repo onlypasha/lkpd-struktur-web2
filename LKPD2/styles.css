@@ -1,0 +1,9 @@
+body{
+    display: flex;
+}
+.content{
+    width: 80%;
+}
+.nav{
+    width: 20%;
+}

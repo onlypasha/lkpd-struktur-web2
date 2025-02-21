@@ -4,11 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulir Pendaftara</title>
-    <!-- <link rel="stylesheet" href="./formstyle.css"> -->
+     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="nav">
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
+        #alamat{
+            height: 100px;
+        }
+
+        input[type="text"], input[type="email"], #alamat{
+            padding: 8px;
+            width: 400px;
+            border: none;
+            border-bottom: 2px solid black;
+            margin-bottom: 5px;
+            transition: 0.2s;
+        }
+
+        input[type="text"]:hover, input[type="email"]:hover, #alamat:hover{
+            border-bottom: 3px solid salmon;
+        }
+
+        #gender, #mapel, #agama, #Jurusan{
+            margin-bottom: 20px;
+        }
+        
+        #alamat{
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        #agama, #Jurusan{
+            padding: 8px;
+            width: 210px;
+        }
+
+        button{
+            border: none;
+            padding: 10px;
+            width: 100%;
+            background-color: salmon;
+            color: white;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+
+        button:hover{
+            color: salmon;
+            background-color: white;
+            border: 1px solid salmon;
+        }
+    </style>
+    <div class="nav">
+        <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
     </div>
     <div class="content">
         <form action="./">
@@ -18,23 +76,25 @@
                         Form Pendaftaran
                     </h2>
                 </legend>
-            <label for="nama">Nama Lengkap: </label>
+                <p>Silakan isi Formulir dibawah ini untuk melakukan pendaftaran ke sekolah kami: </p>
+            <label for="nama">Nama Lengkap: </label><br>
             <input type="text" id="nama">
             <br>
-            <label for="Asal_Sekolah">Asal Sekolah: </label>
+            <label for="Asal_Sekolah">Asal Sekolah: </label><br>
             <input type="text" name="" id="Asal_Sekolah">
             <br>
-            <label for="tempat_lahir">Tempat Lahir: </label>
+            <label for="tempat_lahir">Tempat Lahir: </label><br>
             <input type="text" name="" id="tempat_lahir">
             <br>
-            <label for="email">Email: </label>
+            <label for="email">Email: </label><br>
             <input type="email" name="email" id="email">
             <br>
-            <label for="gender">Jenis kelamin: </label>
+            <br>
+            <label for="gender">Jenis kelamin: </label><br>
             <input type="radio" name="gender" id="gender"> Laki-laki</input>
             <input type="radio" name="gender" id="gender"> Perempuan</input>
             <br>
-            <label for="mapel">Mata Pelajaran Favorit: </label>
+            <label for="mapel">Mata Pelajaran Favorit: </label><br>
             <input type="checkbox" name="mapel" id="mapel">Dasar Keahlian</input>
             <input type="checkbox" name="mapel" id="mapel">Matematika</input>
             <input type="checkbox" name="mapel" id="mapel">Sejarah</input>
@@ -42,7 +102,7 @@
             <label for="alamat">Alamat: </label><br>
             <textarea name="alamat" id="alamat"></textarea>
             <br>
-            <label for="agama">Agama: </label>
+            <label for="agama">Agama: </label><br>
             <select name="agama" id="agama">
                 <option value="Islam">Islam</option>
                 <option value="Katolik">Katolik</option>
@@ -51,7 +111,7 @@
                 <option value="Buddha">Buddha</option>
             </select>
             <br>
-            <label for="Jurusan">Jurusan: </label>
+            <label for="Jurusan">Jurusan: </label><br>
             <select name="Jurusan" id="Jurusan">
                 <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
                 <option value="Bisnis Retail">Bisnis Retail</option>
