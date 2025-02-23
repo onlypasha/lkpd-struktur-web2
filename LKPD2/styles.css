@@ -7,3 +7,31 @@ body{
 .nav{
     width: 20%;
 }
+
+#current{
+    color: grey;
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+}
+
+.topnav{
+    /* overflow: hidden; */
+    display: flex;
+    /* display: flex; */
+    /* margin: 0; */
+}
+#current{
+    width: 30%;
+}
+#menu{
+    width: 70%;
+}
+
+#menu li{
+    float: right;
+    list-style-type: none;
+    padding-left: 5px;
+}
